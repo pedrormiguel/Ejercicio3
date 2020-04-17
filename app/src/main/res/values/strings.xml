@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">ejercicio2</string>
+    <string name="button">Button</string>
+    <string name="daryape">DARYAPE</string>
+    <string name="todo">TODO</string>
+
+    <string name="todu" />
+    <string name="toda" />
+</resources>
