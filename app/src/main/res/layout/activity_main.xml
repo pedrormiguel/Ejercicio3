@@ -2,91 +2,90 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorToChange"
     tools:context=".MainActivity">
 
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="129dp" />
 
     <TextView
         android:id="@+id/titulo"
-        android:layout_width="120dp"
-        android:layout_height="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="50dp"
         android:text="@string/daryape"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
+        android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.591"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.521" />
-
-
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        app:layout_constraintGuide_begin="381dp" />
-
-    <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintGuide_begin="205dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/image_button_android2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        android:id="@+id/imageButtonPedro"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="38dp"
+        android:contentDescription="@string/toda"
+        android:fitsSystemWindows="false"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonSetting"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonYandra"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:srcCompat="@drawable/pedro2"
-        android:contentDescription="@string/toda" />
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.982"
+        app:srcCompat="@drawable/pedro2" />
 
     <ImageButton
-        android:id="@+id/image_button_android3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/guideline6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toTopOf="@+id/guideline5"
-        app:srcCompat="@drawable/yandra2"
-        android:contentDescription="@string/todu" />
-
-    <ImageButton
-        android:id="@+id/image_button_android"
-        android:layout_width="174dp"
-        android:layout_height="171dp"
+        android:id="@+id/imageButtonSetting"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="116dp"
         android:background="@drawable/images"
         android:contentDescription="@string/todo"
+        android:scaleType="fitCenter"
         android:src="@drawable/images"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonDarlin"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline6"
-        app:layout_constraintVertical_bias="0.405"
         app:srcCompat="@drawable/images" />
 
     <ImageButton
-        android:id="@+id/image_button_android4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonDarlin"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="116dp"
+        android:contentDescription="TODO"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/guideline7"
-        app:layout_constraintTop_toTopOf="@+id/guideline6"
-        app:layout_constraintVertical_bias="0.446"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonSetting"
         app:srcCompat="@drawable/darlin1" />
+
+    <ImageButton
+        android:id="@+id/imageButtonYandra"
+        android:layout_width="190dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="38dp"
+        android:contentDescription="@string/todu"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/imageButtonDarlin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageButtonPedro"
+        app:layout_constraintTop_toBottomOf="@+id/titulo"
+        app:layout_constraintVertical_bias="0.982"
+        app:srcCompat="@drawable/yandra2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

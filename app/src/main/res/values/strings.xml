@@ -1,8 +1,57 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <string name="app_name">ejercicio2</string>
+    <string name="titleSecondScrrend">Informacion de Estudiantes</string>
+    <string name="app_name">Listado de Estudiantes</string>
     <string name="button">Button</string>
     <string name="daryape">DARYAPE</string>
     <string name="todo">TODO</string>
+
+    <string name="expressionDarlin">
+        Nací en Santo Domingo, República Dominicana a los 19 días del mes
+        de agosto del año 1996, hijo del señor Rafael Reyes y la señora
+        Sixta Carrión. Soy una persona común, estudio, trabajo por mi cuenta,
+        tengo afición por la comida más hacerlas que degustarlas, hago de vez
+        en cuando parrilladas con amigos o simplemente me centro en practicar
+        nuevos platos ya que no siempre saben bien al primer intento, me gusta
+        aprender cosas nuevas para salir de mi zona de confort. Amo hacer ejercicio
+        me siento libre cada vez que puedo entrenar.
+    </string>
+
+    <string name="expressionPedro">
+        Soy dominicano, y talves mi forma de ser sea un poco diferente a lo que
+        dominicano representa, pero con el tiempo he aprendido tomarle el gusto
+        a toda nuestra cultura. Desde muy pequeno me ha gustado la tecnologia y pasaba
+        horas en el ordenador dibujando en paint, aunque no me gusta dibujar, pero el
+        hecho de usar la pc me gustaba. Tiendo a ser muy reservado pero luego que me
+        conoces te das cuenta que soy todo lo opuesto, se disfrutar de la musica muy alta
+        y sin control tanto como el silencio profundo. Aveces pienso que soy lo mejor de ambos
+        mundos.
+    </string>
+
+    <string name="expressionYandra">
+        Tus pensamientos te llevan a donde quieres ir.
+        Hobbie : me gusta mucho jugar videojuegos me quita el estrés.
+        Una experiencia, hice un intercambio cultural hace 2 años y
+        conocí a muchas personas y culturas de diferentes países por 4
+        meses, tuve 3 trabajos, donde trabajaba de lunes a lunes.
+        Fue un viaje que me enseñó a ser más independiente y a valorar más mi cultura.
+    </string>
+
+    <string name="textViewName">
+        Nombre
+    </string>
+
+    <string name="textViewCity">
+        Ciudad de Nacimiento
+    </string>
+
+    <string name="textViewNumberId">
+        Matricula
+    </string>
+
+    <string name="textViewCreativeExpression">
+        Expresion Creativa
+    </string>
+
 
     <string name="todu" />
     <string name="toda" />
