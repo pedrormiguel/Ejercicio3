@@ -1,10 +1,14 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
     <string name="titleSecondScrrend">Informacion de Estudiantes</string>
     <string name="app_name">Listado de Estudiantes</string>
+    <string name="titleFormularioScreen">Formulario Estudiante</string>
+    <string name="buttonFormularSave">Guardar Estudiante</string>
+    <string name="buttonFormularGallery">Obtener Foto</string>
+
+
     <string name="button">Button</string>
     <string name="daryape">DARYAPE</string>
     <string name="todo">TODO</string>
-
     <string name="expressionDarlin">
         Nací en Santo Domingo, República Dominicana a los 19 días del mes
         de agosto del año 1996, hijo del señor Rafael Reyes y la señora
@@ -52,7 +56,24 @@
         Expresion Creativa
     </string>
 
+    <string name="textViewTitleActivityFormulario">
+        Formulario para crear estudiante
+    </string>
 
     <string name="todu" />
     <string name="toda" />
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="home_second">Home Second</string>
+    <string name="title_activity_draver">Draver</string>
 </resources>

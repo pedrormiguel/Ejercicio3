@@ -1,9 +1,13 @@
 package com.example.ejercicio2;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
+import android.content.res.Resources;
+import android.graphics.drawable.Drawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -21,6 +25,7 @@ public class Information extends AppCompatActivity {
     TextView TextNumberId ;
     TextView TextExpression ;
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -38,13 +43,19 @@ public class Information extends AppCompatActivity {
 //                "100391119",
 //                getString(R.string.expressionPedro));
 
-        imageView.setImageResource(MainActivity.studenSelected.photo);
+        //R.drawable.darlin1
+
+        Resources p = getResources();
+        int drawableId = p.getIdentifier(MainActivity.studenSelected.pathImage,
+                "drawable","com.example.ejercicio2");
+
+        imageView.setImageResource(drawableId);
+       // imageView.setImageDrawable( getResources().getDrawable());
         TextName.setText(MainActivity.studenSelected.name);
         TextCity.setText(MainActivity.studenSelected.city);
         TextNumberId.setText(MainActivity.studenSelected.numberId);
         TextExpression.setText(MainActivity.studenSelected.expression);
         layout.setBackgroundColor(MainActivity.colorToApply);
-
 
     }
 
