@@ -1,43 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/listViewTemplate"
+    android:fitsSystemWindows="true"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="197dp"
-        android:layout_height="199dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginStart="5dp"
         android:layout_marginBottom="5dp"
-        android:fadingEdge="vertical"
+        android:fitsSystemWindows="true"
         android:elevation="10dp"
-        android:layout_gravity="center"
+        android:fadingEdge="vertical"
         tools:targetApi="lollipop">
 
-        <TextView
-            android:id="@+id/textviewRecyclerName"
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"
+            android:fitsSystemWindows="true">
 
-            android:text=""
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="50dp"
-            android:scaleType="fitXY"
-            android:src="@drawable/elreal"
-            android:contentDescription="imageHolder"/>
+            <TextView
+                android:id="@+id/textviewRecyclerName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="4dp"
+                android:text="Name"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/textviewRecyclerId"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textviewRecyclerId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="4dp"
+                android:text="numberId"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textviewRecyclerName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="200dp"
+                android:layout_height="130dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="5dp"
+                android:contentDescription="imageHolder"
+                android:scaleType="fitXY"
+                android:src="@drawable/elreal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textviewRecyclerName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
 
     </androidx.cardview.widget.CardView>
 
 
-</RelativeLayout>
+</LinearLayout>

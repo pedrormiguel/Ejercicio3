@@ -16,7 +16,6 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.ViewModelProviders;
 
 import com.example.ejercicio2.BDHelper;
 import com.example.ejercicio2.Estudiantes;
@@ -27,7 +26,6 @@ import java.util.regex.Pattern;
 
 public class FormularioFragment extends Fragment {
 
-    private FormularioViewModel formularioViewModel;
     private static final int GALLERY_REQUEST_CODE = 0;
     ImageView imageViewUser;
     //Botones
@@ -41,10 +39,6 @@ public class FormularioFragment extends Fragment {
 
 
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-
-        formularioViewModel =
-                ViewModelProviders.of(this).
-                        get(FormularioViewModel.class);
 
         View root = inflater.inflate(
                 R.layout.activity_formulario,
@@ -70,7 +64,6 @@ public class FormularioFragment extends Fragment {
                 validarDatos();
             }
         });
-
 
         return root;
     }
@@ -184,7 +177,9 @@ public class FormularioFragment extends Fragment {
     boolean saveStudent(Estudiantes estudiante){
         return new BDHelper(getContext()).create(estudiante);
     }
-    }
+
+
+}
 
 
 

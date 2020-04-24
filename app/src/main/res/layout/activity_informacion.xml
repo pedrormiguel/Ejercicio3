@@ -8,51 +8,88 @@
     android:fitsSystemWindows="true"
     tools:context=".Information">
 
+    <Button
+        android:id="@+id/buttonEliminar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="52dp"
+        android:text="Eliminar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameInformationExpression" />
+
+    <Button
+        android:id="@+id/buttonBuscar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="72dp"
+        android:text="Buscar"
+        app:layout_constraintBottom_toTopOf="@+id/TextNameInformation"
+        app:layout_constraintEnd_toStartOf="@+id/buttonActualizar"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInformation"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/textTitleViewCity5"
         android:layout_width="272dp"
         android:layout_height="37dp"
         android:layout_marginStart="72dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="72dp"
-        android:layout_marginBottom="1dp"
         android:autoSizeTextType="uniform"
+        android:editable="true"
+        android:freezesText="?android:attr/windowSwipeToDismiss"
+        android:singleLine="true"
         android:text="@string/textViewCreativeExpression"
         android:textAlignment="center"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/TextExpression"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextCity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.567"
         tools:targetApi="o" />
 
-    <TextView
-        android:id="@+id/TextCity"
-        android:layout_width="272dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="93dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="51dp"
+    <EditText
+        android:id="@+id/textNameInformationCity"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginEnd="39dp"
+        android:freezesText="true"
+        android:singleLine="true"
         android:textAlignment="center"
         android:textSize="25sp"
-        app:layout_constraintBottom_toTopOf="@+id/textTitleViewCity5"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitleViewCity"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479" />
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="381dp"
-        android:layout_height="198dp"
-        android:layout_marginStart="26dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="25dp"
+        android:id="@+id/imageViewInformation"
+        android:layout_width="103dp"
+        android:layout_height="103dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="200dp"
         android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintBottom_toTopOf="@+id/TextNameInformation"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textTitleViewCity"
@@ -67,7 +104,7 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TextNumberId" />
+        app:layout_constraintTop_toBottomOf="@+id/textNameInformationNumberId" />
 
     <TextView
         android:id="@+id/textTitleViewNumberId"
@@ -80,35 +117,40 @@
         android:textAlignment="viewStart"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/TextNumberId"
+        app:layout_constraintEnd_toStartOf="@+id/textNameInformationNumberId"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textTitleViewName" />
 
-    <TextView
-        android:id="@+id/TextName"
-        android:layout_width="128dp"
-        android:layout_height="37dp"
+    <EditText
+        android:id="@+id/TextNameInformation"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="22dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="128dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="35dp"
+        android:editable="true"
+        android:freezesText="true"
+        android:singleLine="true"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textTitleViewName"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewInformation" />
 
-    <TextView
-        android:id="@+id/TextNumberId"
-        android:layout_width="128dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="22dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="128dp"
+    <EditText
+        android:id="@+id/textNameInformationNumberId"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:freezesText="true"
+        android:singleLine="true"
         android:textAlignment="center"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textTitleViewNumberId"
-        app:layout_constraintTop_toBottomOf="@+id/TextName" />
+        app:layout_constraintTop_toBottomOf="@+id/TextNameInformation" />
 
     <TextView
         android:id="@+id/textTitleViewName"
@@ -117,29 +159,64 @@
         android:layout_marginStart="26dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="22dp"
+        android:freezesText="true"
         android:text="@string/textViewName"
         android:textAlignment="viewStart"
         android:textSize="25sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/TextName"
+        app:layout_constraintEnd_toStartOf="@+id/TextNameInformation"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageViewInformation" />
 
-    <TextView
-        android:id="@+id/TextExpression"
-        android:layout_width="350dp"
+    <EditText
+        android:id="@+id/textNameInformationExpression"
+        android:layout_width="fill_parent"
         android:layout_height="155dp"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="13dp"
+        android:layout_marginTop="460dp"
         android:layout_marginEnd="40dp"
-        android:layout_marginBottom="30dp"
+        android:layout_marginBottom="16dp"
         android:autoSizeTextType="uniform"
         android:maxLength="600"
         android:textAlignment="viewStart"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEliminar"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.315"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textTitleViewCity5"
+        app:layout_constraintTop_toTopOf="parent"
         tools:targetApi="o" />
+
+    <Button
+        android:id="@+id/buttonActualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:text="Actualizar"
+        app:layout_constraintBottom_toTopOf="@+id/editTextBuscador"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buttonBuscar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextBuscador"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="32dp"
+        android:clickable="false"
+        android:ems="10"
+        android:freezesText="true"
+        android:hint="Numero ID Estudiante"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@+id/TextNameInformation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageViewInformation"
+        app:layout_constraintTop_toBottomOf="@+id/buttonBuscar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

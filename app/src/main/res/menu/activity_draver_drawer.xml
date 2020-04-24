@@ -8,9 +8,15 @@
 
         <item
             android:id="@+id/nav_formulario"
-            android:icon="@drawable/ic_launcher_foreground"
+            android:icon="@drawable/escritura"
+
             android:title="Formulario"
             />
+        <item
+            android:id="@+id/nav_information"
+            android:icon="@drawable/escritura"
+
+            android:title="Detalles"/>
 
     </group>
 

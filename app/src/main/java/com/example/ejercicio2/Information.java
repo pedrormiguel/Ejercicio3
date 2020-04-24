@@ -6,7 +6,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import android.content.Intent;
 import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -61,13 +60,13 @@ public class Information extends AppCompatActivity {
 
     void setUpControllers(){
 
-         imageView = findViewById(R.id.imageView);
+         imageView = findViewById(R.id.imageViewInformation);
 
         // View's informations items
-         TextName = findViewById(R.id.TextName);
-         TextCity = findViewById(R.id.TextCity);
-         TextNumberId = findViewById(R.id.TextNumberId);
-         TextExpression = findViewById(R.id.TextExpression);
+         TextName = findViewById(R.id.TextNameInformation);
+         TextCity = findViewById(R.id.textNameInformationCity);
+         TextNumberId = findViewById(R.id.textNameInformationNumberId);
+         TextExpression = findViewById(R.id.textNameInformationExpression);
          layout = findViewById(R.id.container2);
     }
 
